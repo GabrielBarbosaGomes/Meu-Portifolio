@@ -4,11 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/hero.css">
+        <link rel="stylesheet" href="../css/footer.css">
         <title>Gabriel Barbosa Gomes</title>
     </head>
     <body>
         <header class="header-wrapper">
-            <div class="header">
+            <div class="header" id="section_home">
                 <div class="checkbox-container">
                     <div class="chebox-wrapper">
                         <input type="checkbox" id="toggle">
@@ -21,15 +24,15 @@
                         <nav class="menu-items">
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#section_home">Home</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Sobre</a>
+                                    <a href="#section__Eu">Sobre</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Projetos</a>
+                                    <a href="#section__projetos">Projetos</a>
                                 </li>
                             </ul>
                         </nav>
@@ -37,7 +40,7 @@
                 </div>
             </div>
             <h1>Gabriel Barbosa Gomes</h1>
-            <h2>Front-end Developer</h2>
+            <h2>Front-end Developer.</h2>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/gabrielbarbosagomes/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                 <a href="https://github.com/GabrielBarbosaGomes" target="_blank" rel="noopener noreferrer">Github</a>
@@ -48,7 +51,7 @@
                 <div class="card-text">
                     Meu nome é Gabriel, sou desenvolverdor Front-end(ainda Jr) em busca de novos desafios, sempre tive interesse na programação, porém a vida é uma caixinha de supresa, agora estou de volta e a todo vapor ingressando no mercado, estudando por conta e sendo mentorado por um dev sênior.
                 </div>
-                <div class="card">
+                <div class="card" id="section__Eu">
                     <div class="card-wrapper">
                         <h2>Quem sou...</h2>
                         <p>Conecte-se comigo no linkedin</p>
@@ -58,14 +61,14 @@
             </div>
 
             <div class="card-container">
-                <div class="card">
+                <div class="card" id="section__projetos">
                     <div class="card-wrapper">
                         <h2>Projetos</h2>
                         <p>Acompanhe minha carreira no Github!</p>
                     </div>
                 </div>
                 <div class="card-text">
-                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                    Tenho alguns projetos que fiz para prática e fixação de aprendizagem, projetos de Front-end com e sem js, pegue um café, estou programando para adicionar alguns projetos aqui.
                 </div>
 
             </div>
@@ -86,7 +89,11 @@
 
         <footer class="footer">
             <p>Feito por GabrielBarbosaGomes</p>
-            <img >
+            <div class="contato">
+                <img src="../imagens/logo-whatsapp-256.png" alt="Imagem do whatsapp">
+                <p>(34) 99647-7945</p>
+            </div>
+            
         </footer>
     </body>
 </html>

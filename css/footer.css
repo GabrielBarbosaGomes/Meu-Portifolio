@@ -1,0 +1,25 @@
+/* FOOTER */
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(-45deg, #040404, #13505B, #0C7489, #119DA4);
+}
+
+.footer .contato {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .contato img {
+    height: 30px;
+    width: 30px;
+}
+
+footer p {
+    font-size: 26px;
+}
