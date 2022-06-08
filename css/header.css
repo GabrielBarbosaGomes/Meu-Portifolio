@@ -194,7 +194,11 @@ a:hover {
     top: 48px;    
 }
 
-#toggle:checked + .checkbox {
+/*#toggle:checked + .checkbox {
+    background-color: #ffffff;
+}*/
+
+.checkbox-open {
     background-color: #ffffff;
 }
 
