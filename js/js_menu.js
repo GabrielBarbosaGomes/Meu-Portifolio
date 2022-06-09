@@ -4,7 +4,7 @@ const menu = document.querySelector('#menu')
 const menuItems = document.querySelector('#menu-items')
 const link= document.querySelectorAll('.link-menu');
 const back = document.querySelector('#check')
-console.log(link);
+
 menuzim.addEventListener('click', function(e) {
     menu.classList.toggle('menu-open');
     menuItems.classList.toggle('menu-items-open');

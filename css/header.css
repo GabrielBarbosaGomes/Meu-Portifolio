@@ -73,7 +73,7 @@ h2 {
     }
 }
 
-a:hover {
+.social-media a:hover {
     color: #2e1c2b;
     background-color: #ffffff;
 }
