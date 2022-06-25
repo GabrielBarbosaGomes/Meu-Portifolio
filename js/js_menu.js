@@ -17,7 +17,7 @@ main.addEventListener('click', function() {
     back.classList.remove('checkbox-open');
     menuzim.checked = false;
 ;
-}) ;
+});
 
 function goLinkOpen(){
 
