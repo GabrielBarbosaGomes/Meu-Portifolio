@@ -19,6 +19,12 @@ h1 {
     letter-spacing: 4px;
 }
 
+.windows-projects{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
 h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -280,7 +286,19 @@ h2 {
     opacity: 1;
 }
 
+@media (max-width: 1147px){
+    .windows-projects{
+        width: 74%;
+        text-align: center;
+    }
+}
+
 @media(max-width: 800px) {
+    .windows-projects{
+        font-size: 28px;
+        text-align: center;
+    }
+
     .social-media {
         display: flex;
         flex-direction: column;
