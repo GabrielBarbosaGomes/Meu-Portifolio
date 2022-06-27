@@ -29,3 +29,8 @@ for(var i = 0; i < link.length; i++){
     menuzim.checked = false;
 }
 };
+
+
+function voltarAoInicio(){
+    window.location.href = "contate-me.html";
+}
