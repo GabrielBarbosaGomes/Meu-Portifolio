@@ -31,6 +31,3 @@ for(var i = 0; i < link.length; i++){
 };
 
 
-function voltarAoInicio(){
-    window.location.href = "contate-me.html";
-}

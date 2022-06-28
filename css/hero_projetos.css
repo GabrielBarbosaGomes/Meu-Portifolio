@@ -84,7 +84,7 @@ border-radius: 10px;
     clear: right;
     transform: translateX(-30px);
     text-align: right;
-    background: linear-gradient(-45deg, #050505, #050505, #1B9AAA);
+    background: linear-gradient(-45deg, #042A2B, #042A2B, #1B9AAA);
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
@@ -96,7 +96,7 @@ border-radius: 10px;
     float: right;
     clear: left;
     transform: translateX(30px);
-    background: linear-gradient(-45deg, #1B9AAA, #050505, #050505);
+    background: linear-gradient(-45deg, #1B9AAA, #042A2B, #042A2B);
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
