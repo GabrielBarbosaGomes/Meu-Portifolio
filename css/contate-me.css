@@ -26,10 +26,6 @@ body{
     
 }
 
-.voltar button a svg{
-    backdrop-filter: drop-shadow(2px 2px #fff);
-}
-
 .contato{
     position: absolute;
     top: 50%;
