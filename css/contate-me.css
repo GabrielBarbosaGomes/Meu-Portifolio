@@ -14,8 +14,16 @@ body{
     background: #f2eee3;
 }
 
+main.header-wrapper {
+    min-height: 100%;
+}
+
+.voltar button{
+    border: none;
+}
+
 .voltar button a{
-    position: absolute;
+    position: fixed;
     top: 8px;
     left: 10px;
     padding: 10px;
@@ -27,16 +35,13 @@ body{
 }
 
 .contato{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
+    max-width: 400px;
     padding: 40px;
-    transform: translate(-50%, -50%);
     background: rgba(251, 251, 251, 0.12);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    margin: 0 16px;
 }
 
 .contato h2{
@@ -182,27 +187,38 @@ body{
 
 /*Responsividade*/
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 405px) {
     .contato{
-        width: 320px;
-        padding-top: 160px;
+        overflow: auto;
+    }
+
+    .message textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contato{
+
+        overflow: auto;
     }
 
     .contato h2{
         font-size: 22px;
     }
 
-    .voltar button a{
-        top: 70px;
-        left: 0px;
-    }
+    /* .voltar button a{
+        top: 477px;
+        left: px;
+        z-index: 1000;
+    } */
 
     .contato .info-name label{
         font-size: 12px;
     }
 
     .message textarea{
-        width: 240px;
+        width: 100%;
         height: 200px;
     }
 
