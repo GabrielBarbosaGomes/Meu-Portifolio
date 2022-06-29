@@ -185,6 +185,7 @@ body{
 @media screen and (max-width: 345px) {
     .contato{
         width: 320px;
+        padding-top: 160px;
     }
 
     .contato h2{
