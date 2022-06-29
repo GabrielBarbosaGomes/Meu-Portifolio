@@ -39,6 +39,10 @@
     transition: 0.3s;
 }
 
+.card a{
+    color: #ffffff;
+}
+
 .card-Qsaude {
     background-image: url(../imagens/Qsaude.png);
 }
@@ -97,17 +101,20 @@
     filter: unset;
 }
 
-.card:hover > .card-wrapper::before {
+.card:hover > .card-wrapper::before,
+.card:hover > a .card-wrapper::before {
     opacity: 1;
     width: 350px;
     height: 250px;
 }
 
-.card:hover > .card-wrapper h2{
+.card:hover > .card-wrapper h2,
+.card:hover > a .card-wrapper p{
     filter: drop-shadow(5px 5px 5px #ffffff);
 }
 
-.card:hover > .card-wrapper p {
+.card:hover > .card-wrapper p,
+.card:hover > a .card-wrapper p {
     font-size: 24px;
     opacity: 1;
     visibility: visible;
