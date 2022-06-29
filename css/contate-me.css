@@ -179,3 +179,34 @@ body{
     0% { bottom: -100%;}
     50%, 100% {bottom: 100%;}
 }
+
+/*Responsividade*/
+
+@media screen and (max-width: 345px) {
+    .contato{
+        width: 320px;
+    }
+
+    .contato h2{
+        font-size: 22px;
+    }
+
+    .voltar button a{
+        top: 70px;
+        left: 0px;
+    }
+
+    .contato .info-name label{
+        font-size: 12px;
+    }
+
+    .message textarea{
+        width: 240px;
+        height: 200px;
+    }
+
+    .contato .info-name input:focus ~ label,
+.contato .info-name input:valid ~ label {
+    font-size: 8px;
+}
+}
