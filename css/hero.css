@@ -26,7 +26,7 @@
     height: 300px;
     width:  400px;
     margin: 3rem 0 0 0;
-    background-image: url(../imagens/not.jpeg);
+    background-image: url(../imagens/icon-user.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +80,7 @@
 }
 
 .card-wrapper h2 {
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
