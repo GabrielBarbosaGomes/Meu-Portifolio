@@ -44,6 +44,7 @@ footer p {
     .footer p{
         font-size: 18px;
         text-align: center;
+        margin: 0;
     }
     
     .footer .contato img {
@@ -57,10 +58,12 @@ footer p {
 @media screen and (max-width: 442px) {
     .footer .contato{
         flex-direction: column;
+        width: 50%;
     }
 
     .footer p{
         padding-left: 10px;
         text-align: center;
+        margin: 0;
     }
 }
