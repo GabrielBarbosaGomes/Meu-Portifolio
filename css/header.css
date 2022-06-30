@@ -31,7 +31,7 @@
     }
 
     50% {
-        transform: translateY(-50%);
+        transform: translateY(-100%);
     }
 
     100% {
@@ -326,7 +326,7 @@ h2 {
 
     .header-wrapper .img-pulse{
         right: -1%;
-        top: -55px;
+        top: -18px;
     }
 
     .social-media {
