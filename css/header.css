@@ -14,6 +14,31 @@
     overflow: auto;
 }
 
+.header-wrapper .img-pulse {
+    background-image: url(../imagens/icon-user.png);
+    width: 75px;
+    position: relative;
+    height: 55px;
+    background-size: cover;
+    border-radius: 46%;
+    right: -27%;
+    animation: imgPulse 3.5s ease-in-out infinite;
+}
+
+@keyframes imgPulse {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -297,6 +322,11 @@ h2 {
     .windows-projects{
         font-size: 28px;
         text-align: center;
+    }
+
+    .header-wrapper .img-pulse{
+        right: -1%;
+        top: -55px;
     }
 
     .social-media {
