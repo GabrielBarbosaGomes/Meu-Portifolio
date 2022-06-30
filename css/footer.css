@@ -15,6 +15,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 500px;
+    flex-direction: row-reverse;
 }
 
 .footer .contato .wts{
@@ -23,8 +24,8 @@
 }
 
 .footer .contato img {
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
 }
 
 footer p {
