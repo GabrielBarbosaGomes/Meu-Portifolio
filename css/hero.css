@@ -58,6 +58,10 @@
     color: rgb(109, 109, 109);
 }
 
+.card-text.mid{
+    text-align: end;
+}
+
 .card-wrapper {
     text-align: center;
     display: flex;
@@ -144,6 +148,14 @@
         width: 90%;
         margin-top: 2rem;
         text-align: center;
+    }
+
+    .card-text.mid{
+        text-align: center;
+    }
+
+    .card-text.end{
+        margin-bottom: 20px;
     }
 
     .card:hover > .card-wrapper::before {
