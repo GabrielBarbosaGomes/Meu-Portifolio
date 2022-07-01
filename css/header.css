@@ -21,11 +21,13 @@
     height: 55px;
     background-size: cover;
     border-radius: 46%;
+    filter: drop-shadow(0px 2px 8px #03e9f4);
     right: -27%;
-    animation: imgPulse 3.5s ease-in-out infinite;
+    animation: media 1s, imgPulse 3.5s ease-in-out infinite; 
 }
 
 @keyframes imgPulse {
+   
     0% {
         transform: translateY(0%);
     }
@@ -37,6 +39,7 @@
     100% {
         transform: translateY(0%);
     }
+
 }
 
 h1 {
