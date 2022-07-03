@@ -8,6 +8,7 @@
     align-items: center;
     background: linear-gradient(-45deg, #040404, #13505B, #0C7489, #119DA4);
     margin-top: 10px;
+    font-family: sans-serif;
 }
 
 .footer .contato {
@@ -29,7 +30,7 @@
 }
 
 footer p {
-    font-size: 26px;
+    font-size: 1em;
 }
 
 /*responsivo*/
@@ -40,26 +41,20 @@ footer p {
     }
 }
 
-@media screen and (max-width: 544px){
-    
-    .footer p{
-        font-size: 18px;
-        text-align: center;
-        margin: 0;
-    }
-    
-    .footer .contato img {
-        height: 25px;
-        width: 25px;
+
+@media screen and (max-width: 540px) {
+    .footer{
+        width: 100%;
     }
 
-
-}
-
-@media screen and (max-width: 442px) {
     .footer .contato{
         flex-direction: column;
         width: 50%;
+    }
+
+    .footer .contato img {
+        height: 25px;
+        width: 25px;
     }
 
     .footer p{
@@ -68,3 +63,14 @@ footer p {
         margin: 0;
     }
 }
+
+ @media screen and (max-width: 391px){
+    .footer p{
+        font-size: 0.8em;
+    }
+
+    .footer .contato img{
+        height: 15px;
+        width: 15px;
+    }
+} 
