@@ -18,25 +18,58 @@
 .card-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    /*width: 90%;*/
+    justify-content: space-evenly;    
 }
 
 .card {
     height: 300px;
-    width:  400px;
+    width: 400px;
     margin: 3rem 0 0 0;
     background-image: url(../imagens/icon-user.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    display:flex;
+    position: relative;    
     justify-content: center;
     align-items: center;
-    filter: grayscale(0.5);
+    /* filter: grayscale(0.4); */
     color: #ffffff;
     cursor: pointer;
-    transition: 0.3s;
+    flex-direction: column;
+    /* transition: 0.3s; */
+    border-radius: 50%;
+}
+
+.card:before,
+.card:after{
+    content: ' ';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #E2D4BA, #1B9AAA);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+}
+
+.card::after{
+    filter: blur(50px);
 }
 
 .card a{
@@ -63,7 +96,7 @@
     text-align: end;
 }
 
-.card-wrapper {
+/* .card-wrapper {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -82,9 +115,9 @@
     box-shadow: 0px 0px 8px 5px #ffffff;
     opacity: 0;
     transition: 0.3s;
-}
+} */
 
-.card-wrapper h2 {
+.card h2 {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -92,7 +125,7 @@
     transition: 0.3s;
 }
 
-.card-wrapper p {
+.card p {
     font-size: 0;
     visibility: hidden;
     opacity: 0;
@@ -105,20 +138,21 @@
     filter: unset;
 }
 
-.card:hover > .card-wrapper::before,
-.card:hover > a .card-wrapper::before {
+/* .card:hover > .card-wrapper::before, */
+/* .card:hover > a .card-wrapper::before {
     opacity: 1;
     width: 350px;
     height: 250px;
+}*/
+
+.card:hover > h2,
+.card:hover > a h2{
+    filter: drop-shadow(3.8px 3px 1px #000);
+    text-align: center;
 }
 
-.card:hover > .card-wrapper h2,
-.card:hover > a .card-wrapper h2{
-    filter: drop-shadow(0px 12px 8px #ffffff);
-}
-
-.card:hover > .card-wrapper p,
-.card:hover > a .card-wrapper p {
+.card:hover > p,
+.card:hover > a p {
     font-size: 24px;
     opacity: 1;
     visibility: visible;

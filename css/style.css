@@ -5,6 +5,7 @@ body{
     padding: 0;
     color: #ffffff;
     font-family: 'amatic sc', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* RESPONSIVO */
