@@ -47,7 +47,7 @@
     position: absolute;
     left: -2px;
     top: -2px;
-    background: linear-gradient(45deg, #E2D4BA, #1B9AAA);
+    background: linear-gradient(45deg, #000, #1B9AAA);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -70,6 +70,23 @@
 
 .card::after{
     filter: blur(50px);
+}
+
+.card h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.card p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .card a{
@@ -106,78 +123,17 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    top: 100px;
     background-sizing: 100% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     font-size: 2rem;
-}
-
-.card-text.mid .skills span[data-show]{
-    /* transform: calc(translateX(50% - 50%)); */
-    display: flex;
+    min-width: 180px;
+    text-align: right;
     top: 0;
     right: 0;
-}
-
-.card-text.mid .skills span:nth-child(1) {
     background-image: linear-gradient(45deg, #6d6d6d, #6d6d6d );
-}
-
-.card-text.mid .skills span:nth-child(2) {
-    background-image: linear-gradient(45deg, #6d6d6d, #6d6d6d );
-}
-
-.card-text.mid .skills span:nth-child(3) {
-    background-image: linear-gradient(45deg, #6d6d6d, #6d6d6d );
-}
-
-.card-text.mid .skills span:nth-child(4) {
-    background-image: linear-gradient(45deg, #6d6d6d, #6d6d6d );
-}
-
-.card-text.mid .skills span:nth-child(5) {
-    background-image: linear-gradient(45deg, #6d6d6d, #6d6d6d );
-}
-
-/* .card-wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.card-wrapper::before {
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 8px 5px #ffffff;
-    opacity: 0;
-    transition: 0.3s;
-} */
-
-.card h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.3s;
-}
-
-.card p {
-    font-size: 0;
-    visibility: hidden;
-    opacity: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
 }
 
 .card .skilsImg{
@@ -193,13 +149,6 @@
 .card:hover {
     filter: unset;
 }
-
-/* .card:hover > .card-wrapper::before, */
-/* .card:hover > a .card-wrapper::before {
-    opacity: 1;
-    width: 350px;
-    height: 250px;
-}*/
 
 .card:hover > h2,
 .card:hover > a h2{
@@ -247,6 +196,12 @@
     }
 
     .card-text.mid{
+        text-align: center;
+    }
+
+    .card-text.mid .skills span{
+        left: 50%;
+        transform: translateX(-50%);
         text-align: center;
     }
 
